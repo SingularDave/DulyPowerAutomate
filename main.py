@@ -8,6 +8,7 @@ from email_matches import get_email_template
 app = FastAPI()
 
 
+# RequestItem class is used to parse the request body into a list of RequestItem objects
 class RequestItem(BaseModel):
     manager_name: str = Field(..., alias="Manager Name")
     manager_email: str = Field(..., alias="Manager Email")
@@ -21,6 +22,7 @@ class RequestPayload(BaseModel):
     body: list[RequestItem]
 
 
+# Post request to /clinic-requests. Takes in a list of requests and returns a list of matching requests.
 @app.post("/clinic-requests")
 async def process_requests(request_payload: RequestPayload):
     staffing_requests = []

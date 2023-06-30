@@ -5,6 +5,7 @@ def format_datetime(dt):
     return dt.strftime("%m/%d/%y at %I:%M%p")
 
 
+# Email template informing managers of a match
 def get_email_template(request1, request2):
     email_template = f"""Subject: Staffing Request Match Found
 

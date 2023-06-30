@@ -1,3 +1,4 @@
+# Clinics are matched based on 25 minute drive time from each other
 nearby_clinics_dict = {
     "Addison": ["BT", "BL", "BR Village", "DG Main St", "York", "GE", "GE 854", "Clay", "AHR1300", "Archer Lemont",
                 "Lisle", "LOM", "CG", "HS", "Iroquois", "WASH", "Westmont", "Westmont Ogden", "PASQ", "WTN",
@@ -85,6 +86,7 @@ nearby_clinics_dict = {
             "Saddlewood", "WASH", "Westmont", "Westmont Ogden", "PASQ", "WTN", "Rt 56 WTN"]
 }
 
+# This matches request types
 matching_requests_dict = {
     "Needs a Tech": "Has a Tech to Spare",
     "CHas a Tech to Spare": "Needs a Tech",

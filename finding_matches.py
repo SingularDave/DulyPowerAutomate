@@ -4,7 +4,6 @@ from matching_criteria import nearby_clinics_dict, matching_requests_dict
 
 
 def do_shifts_overlap(request_1: StaffingRequest, request_2: StaffingRequest) -> bool:
-    # Combine date and time for each request to create datetime objects for start and end times
     start_time_1 = request_1.start_time
     print(f"start_time_1: {start_time_1}")
     end_time_1 = request_1.end_time
