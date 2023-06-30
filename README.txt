@@ -1,6 +1,6 @@
 This API finds matching requests for staffing needs across different clinics and notifies the managers via email.
 
-Managers can submit requests by making a POST request to the /clinic-requests endpoint with a payload in the following format:
+Power Automate will submit requests from the List by making a POST request to the /clinic-requests endpoint with a payload in the following format:
 
 ```json
 {
@@ -23,7 +23,7 @@ The API will then:
 1. Check if any of the requests overlap in time
 2. Check if the clinics are nearby using a predefined dictionary
 3. Check if the request types match using another dictionary
-4. If a match is found, an email is generated and returned in the response with the managers' email addresses and email template.
+4. If a match is found, an email is generated and returned in the response with the managers' email addresses and email template. Power Automate will then send the email to the managers via Outlook.
 
 For example:
 ```json
@@ -38,6 +38,6 @@ For example:
 }
 ```
 
-Otherwise an empty list is returned.
+Otherwise, an empty list is returned.
 
 The code contains input validation to ensure that only valid request objects are created.
