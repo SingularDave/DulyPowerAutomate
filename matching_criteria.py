@@ -89,7 +89,7 @@ nearby_clinics_dict = {
 # This matches request types
 matching_requests_dict = {
     "Needs a Tech": "Has a Tech to Spare",
-    "CHas a Tech to Spare": "Needs a Tech",
+    "Has a Tech to Spare": "Needs a Tech",
     "Needs to Relocate a Therapist": "Can Accommodate a Therapist",
     "Can Accommodate a Therapist": "Needs to Relocate a Therapist"
 }
